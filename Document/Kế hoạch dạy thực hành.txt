@@ -1,0 +1,77 @@
+Chương trình học môn Thực hành Lập trình cho thiết bị di động (android)
+Buổi 1 - Lab 1 (Tuần 4LT):
+	Xây dựng một ứng dụng android cơ bản nhất
+	Sử dụng một số control cơ bản để thao tác trên ứng dụng android (TextView, EditText, Button)
+	Cách sử dụng thông báo không cho phép tương tác (Toast)
+	Nắm bắt và xử lý các sự kiện trên vòng đời của một Activity (App Life Cycle)
+	Bài tập:
+		Vòng đời Activity
+		Giải PT bậc 1, 2
+
+Buổi 2 - Lab 2 (Tuần 5LT): Intent
+	Sử dụng Intent để gọi sang các Activity khác
+	Truyền nhận dữ liệu giữa các Activity
+	Bài tập:
+		Chơi kéo búa giấy
+		Dãy Fibonacci
+		Gửi thông tin sinh viên
+
+Buổi 3 - Lab 3 (Tuần 6LT): Thiết kế giao diện
+	Ứng dụng các cấu trúc giao diện cơ bản để xây dựng giao diện trên android
+	Sử dụng Resources ở mức cơ bản
+	Bài tập:
+		Thiết kế máy tính bỏ túi đơn giản có sử dụng tài nguyên color
+		Thiết kế form Thông tin cá nhân có sử dụng tài nguyên color và string
+
+Buổi 4 - Lab 4 (Tuần 7LT): ListView
+	Sử dụng điều khiển danh sách ListView
+	Sử dụng tài nguyên string
+	Thay đổi giao diện của ListView
+	Bài tập:
+		Danh sách lớp
+		Quản lý nhân viên
+		Quản lý nhân viên - tùy biến giao diện
+
+Buổi 5 - Lab 5 (Tuần 8LT): Customized ListView + Intent + Dialog
+	Tùy biến giao diện ListView
+	Sử dụng một số Dialog (DatePickerDialog và TimePickerDialog) để nhập liệu
+	Kết hợp Dialog, ListView, Intent để xây dựng 1 ứng dụng quản lý đơn giản
+	Bài tập:
+		Danh sách công việc
+		Đặt hàng
+
+Buổi 6 (Tuần 9LT): Kiểm tra GK. Tỉ lệ 50%.
+
+Buổi 7 - Lab 6 (Tuần 10LT): Menu + Dialog
+	Sử dụng AlertDialog, tự tạo giao diện Dialog
+	Sử dụng Option menu, Context menu
+	Bài tập:
+		Quản lý đặt phòng
+
+Buổi 8 - Lab 7 (Tuần 11LT): SQLite
+	Tạo mới một CSDL SQLite
+	Kết nối ứng dụng android với một CSDL SQLite sử dụng Room Persistence Library
+	Khai thác CSDL SQLite bằng android (đọc, thêm, sửa, xóa dữ liệu)
+	Bài tập:
+		Quản lý Sách
+		Karaoke list
+
+Buổi 9 - Lab 8 (Tuần 12LT): Service
+	Tạo một WebService đơn giản với PHP và MySQL
+	Sử dụng thư viện Volley để kết nối tới WebService
+	Bài tập:
+		Quản lý sinh viên
+
+Buổi 10 (Tuần 13LT): Kiểm tra CK. Tỉ lệ 50%.
+
+Làm thêm:
+Lab09: AsyncTask
+	Giả lập xử lý một tác vụ tốn thời gian
+	Tải hình dung lượng lớn từ internet
+	Xử lý SQLite với AsyncTask
+Lab10: Google Map
+	Đăng kí dịch vụ của Google Map
+	Gắn thẻ trên bản đồ
+	Định vị vị trí trên bản đồ
+
+	

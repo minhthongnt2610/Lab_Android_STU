@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeaderBack"
+        android:gravity="center"
+        android:text="@string/thong_tin_ca_nhan"
+        android:textColor="@color/colorHeaderText"
+        android:textSize="16pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/ho_ten"
+            android:textColor="@color/colorText"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/txtHoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/cmnd"
+            android:textColor="@color/colorText"
+            android:textSize="9pt" />
+
+        <EditText
+            android:id="@+id/txtCMND"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="9pt" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGroupBack"
+        android:gravity="center"
+        android:text="@string/gioi_tinh"
+        android:textColor="@color/colorGroupText"
+        android:textSize="14pt"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdbNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nam" />
+
+        <RadioButton
+            android:id="@+id/rdbNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nu" />
+
+        <RadioButton
+            android:id="@+id/rdbKhongXacDinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/khong_xac_dinh" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGroupBack"
+        android:gravity="center"
+        android:text="@string/so_thich"
+        android:textColor="@color/colorGroupText"
+        android:textSize="14pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/ckbAnNgon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/an_ngon" />
+
+        <CheckBox
+            android:id="@+id/ckbMacDep"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/mac_dep" />
+
+        <CheckBox
+            android:id="@+id/ckbChoiGame"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/choi_game" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGroupBack"
+        android:gravity="center"
+        android:text="@string/thong_tin_khac"
+        android:textColor="@color/colorGroupText"
+        android:textSize="14pt"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtThongTinKhac"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:text="Nếu là chim tôi sẽ là một con chim non trên cành cây"
+        android:textSize="10pt" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButton"
+        android:text="@string/luu_thong_tin"
+        android:textColor="@color/colorText"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab04_DanhSachLop</string>
+    <string-array name="arr_ds_lop">
+        <item>Trịnh Văn Lễ - DH9865541</item>
+        <item>Huỳnh Hồng Ngọc - DH9865542</item>
+        <item>Vương Thái Xuyên - DH9865543</item>
+        <item>Hàng Lợi Liên - DH9865544</item>
+        <item>Đoàn Thị Lệ Minh - DH9865545</item>
+        <item>Lý Chánh Văn - DH9865546</item>
+        <item>Trần Phương Vỹ - DH9865547</item>
+        <item>Nguyễn Hữu Lợi - DH9865548</item>
+        <item>Trần Thị Cẩm Xuân - DH9865549</item>
+    </string-array>
+</resources>

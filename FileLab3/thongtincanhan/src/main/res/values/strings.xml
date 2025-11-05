@@ -1,0 +1,32 @@
+<!--<resources>-->
+<!--    <string name="app_name">Lab03_ThongTinCaNhan</string>-->
+<!--    <string name="thong_tin_ca_nhan">Thông tin cá nhân</string>-->
+<!--    <string name="ho_ten">Họ tên: </string>-->
+<!--    <string name="cmnd">CMND: </string>-->
+<!--    <string name="gioi_tinh">Giới tính</string>-->
+<!--    <string name="nam">Nam</string>-->
+<!--    <string name="nu">Nữ</string>-->
+<!--    <string name="khong_xac_dinh">Không xác định</string>-->
+<!--    <string name="so_thich">Sở thích</string>-->
+<!--    <string name="an_ngon">Ăn ngon</string>-->
+<!--    <string name="mac_dep">Mặc đẹp</string>-->
+<!--    <string name="choi_game">Chơi game</string>-->
+<!--    <string name="thong_tin_khac">Thông tin khác</string>-->
+<!--    <string name="luu_thong_tin">Lưu thông tin</string>-->
+<!--</resources>-->
+<resources>
+    <string name="app_name">Lab03_PersonalInfo</string>
+    <string name="thong_tin_ca_nhan">Personal Information</string>
+    <string name="ho_ten">Full Name: </string>
+    <string name="cmnd">ID: </string>
+    <string name="gioi_tinh">Gender</string>
+    <string name="nam">Male</string>
+    <string name="nu">Female</string>
+    <string name="khong_xac_dinh">Undisclosed</string>
+    <string name="so_thich">Hobbies</string>
+    <string name="an_ngon">Gourmet Food</string>
+    <string name="mac_dep">Fashion</string>
+    <string name="choi_game">Gaming</string>
+    <string name="thong_tin_khac">Other Information</string>
+    <string name="luu_thong_tin">Save Information</string>
+</resources>
