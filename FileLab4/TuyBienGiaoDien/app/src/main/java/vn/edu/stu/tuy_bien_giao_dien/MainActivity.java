@@ -1,5 +1,5 @@
+package vn.edu.stu.tuy_bien_giao_dien;
 
-package vn.edu.stu.quan_ly_nhan_vien;
 
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +18,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
 
-import vn.edu.stu.quan_ly_nhan_vien.model.Nhanvien;
+import vn.edu.stu.tuy_bien_giao_dien.adapter.NhanvienAdapter;
+import vn.edu.stu.tuy_bien_giao_dien.model.Nhanvien;
+
 
 public class MainActivity extends AppCompatActivity {
     EditText txtMa, txtTen, txtSdt;
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         lvDsNhanVien = findViewById(R.id.lvDsNhanVien);
 
         dsNhanVien = new ArrayList<>();
-        adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, dsNhanVien);
+        adapter = new NhanvienAdapter(MainActivity.this, R.layout.item_nhanvien, dsNhanVien);
         lvDsNhanVien.setAdapter(adapter);
     }
 
