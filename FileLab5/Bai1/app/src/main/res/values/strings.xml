@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">bai1</string>
+    <string name="quan_ly_cong_viec">Quản lý công việc</string>
+    <string name="them_moi_cong_viec">Thêm mới công việc</string>
 </resources>
