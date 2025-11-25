@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mnuThem"
+        android:icon="@drawable/ic_them"
+        android:title="Thêm mới"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/mnuThoat"
+        android:title="Thoát" />
 
 </menu>
