@@ -80,20 +80,40 @@ public class DatPhongActivity extends AppCompatActivity {
     }
 
     private void xuLyLuu() {
-        if(chon != null){
-            chon.setTenNguoiDat(txtTenNguoiDat.getText().toString());
+        String ten = txtTenNguoiDat.getText().toString().trim();
+        String soDemStr = txtSoDem.getText().toString().trim();
+        if (ten.isEmpty()) {
+            txtTenNguoiDat.setError("Tên người đặt không được bỏ trống!");
+            txtTenNguoiDat.requestFocus();
+            return;
+        }
+        if (soDemStr.isEmpty()) {
+            txtSoDem.setError("Số đêm không được bỏ trống!");
+            txtSoDem.requestFocus();
+            return;
+        }
+        int soDem = Integer.parseInt(soDemStr);
+        if (soDem <= 0) {
+            txtSoDem.setError("Số đêm phải lớn hơn 0!");
+            txtSoDem.requestFocus();
+            return;
+        }
+        if (chon != null) {
+            chon.setTenNguoiDat(ten);
             chon.setNgayDat(calendar.getTime());
-            chon.setSoDem(Integer.parseInt(txtSoDem.getText().toString()));
-        }else{
+            chon.setSoDem(soDem);
+        } else {
             DatPhong datPhong = new DatPhong();
             datPhong.setMa(txtMa.getText().toString());
-            datPhong.setTenNguoiDat(txtTenNguoiDat.getText().toString());
+            datPhong.setTenNguoiDat(ten);
             datPhong.setNgayDat(calendar.getTime());
-            datPhong.setSoDem(Integer.parseInt(txtSoDem.getText().toString()));
+            datPhong.setSoDem(soDem);
             DuLieu.themDatPhong(datPhong);
         }
+
         finish();
     }
+
 
     private void xuLyChonNgay() {
         DatePickerDialog.OnDateSetListener listener = new DatePickerDialog.OnDateSetListener() {
