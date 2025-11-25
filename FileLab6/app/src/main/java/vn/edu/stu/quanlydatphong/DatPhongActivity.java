@@ -1,8 +1,11 @@
 package vn.edu.stu.quanlydatphong;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -62,7 +65,60 @@ public class DatPhongActivity extends AppCompatActivity {
     }
 
     private void addEvents() {
+        btnDatePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                xuLyChonNgay();
+            }
+        });
+        btnLuu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                xuLyLuu();
+            }
+        });
     }
+
+    private void xuLyLuu() {
+        if(chon != null){
+            chon.setTenNguoiDat(txtTenNguoiDat.getText().toString());
+            chon.setNgayDat(calendar.getTime());
+            chon.setSoDem(Integer.parseInt(txtSoDem.getText().toString()));
+        }else{
+            DatPhong datPhong = new DatPhong();
+            datPhong.setMa(txtMa.getText().toString());
+            datPhong.setTenNguoiDat(txtTenNguoiDat.getText().toString());
+            datPhong.setNgayDat(calendar.getTime());
+            datPhong.setSoDem(Integer.parseInt(txtSoDem.getText().toString()));
+            DuLieu.themDatPhong(datPhong);
+        }
+        finish();
+    }
+
+    private void xuLyChonNgay() {
+        DatePickerDialog.OnDateSetListener listener = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int year, int monthOfYear, int dayOfMonth) {
+                calendar.set(Calendar.YEAR, year);
+                calendar.set(Calendar.MONTH, monthOfYear);
+                calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                txtNgayDat.setText(FormatUtil.formatDate(calendar.getTime()));
+            }
+        };
+
+        DatePickerDialog datePickerDialog = new DatePickerDialog(
+                DatPhongActivity.this,
+                listener,
+                calendar.get(Calendar.YEAR),
+                calendar.get(Calendar.MONTH),
+                calendar.get(Calendar.DAY_OF_MONTH)
+        );
+
+        datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis());
+
+        datePickerDialog.show();
+    }
+
 
     private void addControls() {
         txtMa = findViewById(R.id.txtMa);
