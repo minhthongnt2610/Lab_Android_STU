@@ -60,7 +60,7 @@ public class DatPhongActivity extends AppCompatActivity {
         }else{
             txtMa.setText(RandomUtil.getAlphaNumericString(8));
             txtTenNguoiDat.requestFocus();
-            calendar.add(Calendar.DATE,2);
+            calendar.add(Calendar.DATE,0);
         }
     }
 
@@ -148,6 +148,7 @@ public class DatPhongActivity extends AppCompatActivity {
         btnDatePicker = findViewById(R.id.btnDatePicker);
         btnLuu = findViewById(R.id.btnLuu);
         calendar = Calendar.getInstance();
+        txtNgayDat.setText(FormatUtil.formatDate(calendar.getTime()));
         chon = null;
     }
 }
